@@ -1,0 +1,53 @@
+.container{
+    min-height: 2000px;
+}
+
+.red{
+    color:red;
+}
+.green{
+    color:green
+}
+.purple{
+    color:purple
+}
+.blue{
+    color:blue
+}
+
+.BGred{
+    background-color:red;
+}
+.BGgreen{
+    background-color:green !important;
+    color:#fff !important;
+}
+.BGpurple{
+    background-color:purple
+}
+.BGblue{
+    background-color:blue
+}
+
+.table{
+  
+    margin-top: 50px;
+    tr{
+        td{
+            padding:5px 13px;
+            border:1px solid #222;
+        }
+    }
+   
+    tbody{
+        tr{
+            td{
+                background: red;
+            }
+        }
+    }
+}
+
+.product{
+    background: #999 !important;   
+}

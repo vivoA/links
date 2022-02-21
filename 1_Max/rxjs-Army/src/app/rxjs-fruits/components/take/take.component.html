@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-title">
+        <div class="question">
+            <h1> #take </h1>
+            <h2> Only two bananas should be mixed. </h2>
+            <p> ["Banana", "Banana", "Banana", "Banana"] </p>
+        </div>
+    </div>
+    <div class="card-body">
+        <p *ngFor="let take of takeItems"> {{take}}</p>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary" (click)="take()"> Show result </button>
+    </div>
+</div>

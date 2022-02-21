@@ -1,0 +1,93 @@
+<div class="container">
+    <h1 class="text-center"> Structure Directive And Attribute Directive  </h1>
+    <div class="row">
+        <div class="col">
+            <div *ngFor="let item of items;
+                        index as i;
+                        odd as odd;
+                        even as even;
+                        first as first;
+                        last as last">
+               <ul>
+                   <li [ngClass]="{
+                            'red': odd,
+                            'green':even,
+                            'purple':first,
+                            'blue':last
+                            }">
+                            {{item}} 
+                    </li>
+               </ul>
+            </div>
+        </div>
+
+        <div class="col table">
+            <h1> ngClass && ngStyle</h1>
+            <table>
+                <thead>
+                    <tr class="product">
+                        <td> product </td>
+                        <td> index  </td>
+                        <td> first </td>
+                        <td> last </td>
+                        <td> odd </td>
+                        <td> even </td>
+                        <td> count </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products;
+                            index as i;
+                            count as count;
+                            first as first;
+                            last as last;
+                            odd as odd;
+                            even as even;
+                           ">
+                        <td class="product"> {{product}} </td>
+                        <td class="product"> {{i}} </td>
+                        <td  [ngClass]="{'BGgreen':first}"> {{first}} </td>
+                        <td  [ngClass]="{'BGgreen':last}"> {{last}} </td> 
+                        <td  [ngClass]="{'BGgreen':odd}"> {{odd}} </td>
+                        <td  [ngClass]="{'BGgreen':even}"> {{even}} </td> 
+                        <td  [ngStyle]="{'background':count ? 'purple':'green'}" style="color: wheat;"> {{count}} </td>  
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <!----------------------- start custom directive --------------->
+        <h3 HighLightGreen purpleDirective> Custom Directive Here !</h3>
+    <!----------------------- end custom directive --------------->
+
+
+    <!----------------------- start better directive --------------->
+        <h3 redDirective> Red Directive Here !</h3>
+    <!----------------------- end better directive --------------->
+
+
+    <!----------------------- start @hostListener directive ----------->
+        <h3 HoverListener> hover me please ( HoverListener ).........!</h3>
+    <!----------------------- end @hostListener directive --------------->
+
+    <!----------------------- start @hostBinding directive ----------->
+        <h3 HoverBinding> hover me from ( HoverBinding ) ................!</h3>
+    <!----------------------- start @hostBinding directive ----------->
+
+
+    <!----------------------- Start ngSwitch directive ----------->
+    <br>
+    <hr>
+    <h1 style="color: red;"> *ngSwitch directive</h1>
+    <ul [ngSwitch]="value">
+        <li *ngSwitchCase="10"> Value is 10 </li>
+        <li *ngSwitchCase="100"> Value is 100</li>
+        <li *ngSwitchDefault> No Value Matching</li>
+    </ul>
+    <!----------------------- End ngSwitch directive ----------->
+
+</div>

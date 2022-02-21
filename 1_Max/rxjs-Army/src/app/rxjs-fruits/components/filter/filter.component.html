@@ -1,0 +1,16 @@
+
+<div class="card">
+    <div class="card-title">
+        <div class="question">
+            <h1> #filter </h1>
+            <h2> All fresh apples and bananas should be mixed. </h2>
+            <p> ["Apple", "Banana", "old-Banana", "old-Apple", "old-Apple"] </p>
+        </div>
+    </div>
+    <div class="card-body d-flex">
+        <p *ngFor="let filter of filterItems"> {{filter}}</p>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary" (click)="clickFilter()"> Show result </button>
+    </div>
+</div>

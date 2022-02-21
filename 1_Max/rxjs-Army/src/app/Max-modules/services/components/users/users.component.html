@@ -1,0 +1,30 @@
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary">
+                Active users 
+            </button>
+            <div class="body">
+                <active-users
+                    [users]="activeUsers"
+                    (setToDeActive)="setToDeActiveFun($event)"
+                ></active-users>
+            </div>
+        </div>
+
+        <div class="col">
+            <button class="btn btn-danger">
+               De Active users 
+            </button>
+            <div class="body">
+                <de-active-users 
+                   [users]="deActiveUsers"
+                   (setToActive)="setToActiveFun($event)"
+                ></de-active-users>
+            </div>
+        </div>
+    </div>
+</div>

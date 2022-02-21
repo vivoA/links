@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~video.js/dist/video-js.css';
+@import '~videojs-record/dist/css/videojs.record.css';
+
+.card{
+    margin-top: 20px;
+    .card-title{
+        padding:20px;
+        border-bottom: 1px solid #b5b5b55e;
+        .question{
+            h1{
+                color:#82267B;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
+    .card-body{
+        display: flex;
+        p{
+            margin-left: 10px;
+        }
+    }
+}

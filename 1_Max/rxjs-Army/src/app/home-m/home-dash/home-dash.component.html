@@ -1,0 +1,31 @@
+<div class="home-controls">
+    <!-- get rxjs angular army links -->
+    <section>
+        <h1 class="text-center title">  Rxjs Angular Army Links    </h1>
+        <div class="row">
+            <div class="col-md-3 item" *ngFor="let item of rxjsLinks">
+                <a [routerLink]="item.link" routerLinkActive="router-link-active" >  #{{item.name}} </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- get Maximilan  links -->
+    <section>
+        <h1 class="text-center title">  Maxmilan Links    </h1>
+        <div class="row">
+            <div class="col-md-3 item" *ngFor="let item of maxLinks">
+                <a [routerLink]="item.link" routerLinkActive="router-link-active" >  #{{item.name}} </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- get Maximilan  links -->
+    <section>
+        <h1 class="text-center title">  rxjs-fruits Links    </h1>
+        <div class="row">
+            <a routerLink="/fruits" routerLinkActive="router-link-active" >  #Click_here </a>
+        </div>
+    </section>
+</div>
+
